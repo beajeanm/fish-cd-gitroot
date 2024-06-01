@@ -16,9 +16,9 @@ function cd-gitroot
   set -l relative_path $argv[1]
 
   if test -z "$relative_path"
-    cd -- $root_path
+    builtin cd -- $root_path
   else
-    cd -- $root_path/$relative_path
+    builtin cd -- $root_path/$relative_path
   end
 end
 
